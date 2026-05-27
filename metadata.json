@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Auditoría Novas CABA",
+  "description": "Una plataforma profesional e interactiva para la auditoría inteligente de liquidaciones de expensas de consorcios en CABA con IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
