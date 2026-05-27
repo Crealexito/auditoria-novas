@@ -491,7 +491,7 @@ Instrucciones de Extracción:
 `;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.0-flash',
       contents: [documentPart, { text: promptText }],
       config: {
         responseMimeType: 'application/json',
@@ -649,7 +649,7 @@ Instrucciones para generar el informe técnico:
 `;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.0-flash',
       contents: [{ text: promptText }],
       config: {
         responseMimeType: 'application/json',
@@ -760,7 +760,7 @@ ${JSON.stringify(messages.slice(-6), null, 2)}
 `;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.0-flash',
       contents: [{ text: promptText }],
     });
 
