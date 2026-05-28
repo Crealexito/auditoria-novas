@@ -73,6 +73,8 @@ export default function UploadZone({ onParsed, onLoadDemos, isLoading, setIsLoad
         };
 
         onParsed(parsedLiquidacion);
+        setIsLoading(false);
+        setCurrentFileName(null);
       };
       reader.onerror = () => {
         throw new Error('Error de lectura física de archivo en el navegador.');
@@ -80,10 +82,9 @@ export default function UploadZone({ onParsed, onLoadDemos, isLoading, setIsLoad
     } catch (error: any) {
       console.error(error);
       setErrorMsg(error.message || 'Error desconocido al analizar tu liquidación. Intentá nuevamente.');
-    } finally {
       setIsLoading(false);
       setCurrentFileName(null);
-    }
+    } 
   };
 
   const handleDragOver = (e: React.DragEvent) => {
